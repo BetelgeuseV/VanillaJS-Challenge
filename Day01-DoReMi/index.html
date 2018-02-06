@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KeyboardKeyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="keys">
+        <svg class="piano" height="230" width="1000">
+            <polygon points="200,10 230,10 230,100 245,100 245,220 200,220 200,10" data-key="86" class="key white"/>
+            <polygon points="245,100 260,100 260,10 275,10 275,100 290,100 290,220 245,220 245,100" class="white" data-key="83" id="d"/>
+            <polygon points="305,10 335,10 335,220 290,220 290,100 305,100 305,10" class="white" data-key="68" id="e" />
+            <polygon points="335,10 365,10 365,100 380,100 380,220 335,220 335,10" class="white" data-key="70" id="f" />
+            <polygon points="380,100 395,100 395,10 410,10 410,100 425,100 425,220 380,220 380,100" class="white" data-key="71" id="g"/>
+            <polygon points="425,100 440,100 440,10 455,10 455,100 470,100 470,220 425,220 425,100" class="white" data-key="72" id="a"/>  
+            <polygon points="470,100 485,100 485,10 515,10 515,220 470,220 470,100" class="white" data-key="74" id="b" />
+            <polygon points="230,10 260,10 260,100 230,100 230,10" class="black" data-key="49" id="c_sharp" />
+            <polygon points="275,10 305,10 305,100 275,100 275,10" class="black" data-key="50" id="d_sharp" />
+            <polygon points="365,10 395,10 395,100 365,100 365,10" class="black" data-key="51" id="f_sharp" />
+            <polygon points="410,10 440,10 440,100 410,100 410,10" class="black" data-key="52" id="g_sharp" />
+            <polygon points="455,10 485,10 485,100 455,100 455,10" class="black" data-key="53" id="a_sharp" />
+        </svg>
+        <div data-key="86" class="key">
+           <kbd>v</kbd>
+           <span>do</span>
+        </div>
+        <div data-key="89" class="key">
+            <kbd>y</kbd>
+            <span>re</span>
+        </div>
+        <div data-key="85" class="key">
+            <kbd>u</kbd>
+            <span>mi</span>
+        </div>
+        <div data-key="73" class="key">
+            <kbd>i</kbd>
+            <span>fa</span>
+        </div>
+        <div data-key="79" class="key">
+            <kbd>o</kbd>
+            <span>sol</span>
+        </div>
+        <div data-key="80" class="key">
+            <kbd>p</kbd>
+            <span>la</span>
+        </div>
+        <div data-key="48" class="key">
+            <kbd>0</kbd>
+            <span>ti</span>
+        </div>
+        <div data-key="189" class="key">
+            <kbd>-</kbd>
+            <span>do</span>
+        </div>
+    </div>
+
+    <audio data-key="86" src="sounds/do.wav"></audio>
+    <audio data-key="89" src="sounds/re.wav"></audio>
+    <audio data-key="85" src="sounds/mi.wav"></audio>
+    <audio data-key="73" src="sounds/fa.wav"></audio>
+    <audio data-key="79" src="sounds/sol.wav"></audio>
+    <audio data-key="80" src="sounds/la.wav"></audio>
+    <audio data-key="48" src="sounds/ti.wav"></audio>
+    <audio data-key="189" src="sounds/do_octave.wav"></audio>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
